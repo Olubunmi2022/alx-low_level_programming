@@ -1,4 +1,4 @@
-#include 'main.h"
+#include "main.h"
 
 /**
  * _strcat - joins two strings with a bytes
@@ -18,10 +18,10 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 	j = 0;
-	while (j < n && src[j] ! '\0')
+	while (j < n && src[j] != '\0')
 	{
-		dest[i] = src[j]:
-		i+++;
+		dest[i] = src[j];
+		i++;
 		j++;
 	}
 	dest[i] = '\0';
